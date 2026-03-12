@@ -1,6 +1,11 @@
 export default function StuffForm() {
+
+  function handleSubmit (e) {
+    e.preventDefault();
+  }
+
   return (
-    <form className="stuff-form">
+    <form className="stuff-form" onSubmit={handleSubmit}>
       <p>Stuff name</p>
       <input type="search" placeholder="Banana" />
 
